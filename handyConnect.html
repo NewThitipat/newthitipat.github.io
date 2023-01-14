@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + JohnDoe main styles -->
     <link rel="stylesheet" href="assets/css/johndoe.css">
+
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
         <div class="container">
@@ -57,8 +59,188 @@
         <div class="container">
             <h5 class="mt-5">What is <span class="text-danger">Handy Connect</span></h5>
             <hr>
-            <p style="font-size: 16px;">Handy Connect is an application use for connect disable user and normal user together  </p>
+            <p style="font-size: 16px;">Handy Connect is an application that connects disabled users and normal users.
+                Disabled users can ask for help then normal user can accept the request to help the disabled. </p>
+            <h5 class="mt-5"> <span class="text-danger">Application</span> Diagram</h5>
+            <hr>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="assets/imgs/handy/11.jpg" style="width: 100%; height: 100%; object-fit: cover; ">
+                </div>
+                <div class="col-lg-6 ">
+                    <img src="assets/imgs/handy/12.jpg" style="width: 100%; height: 100%; object-fit: cover; ">
+                </div>
+
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="assets/imgs/handy/13.jpg" style="width: 100%; height: 100%; object-fit: cover; ">
+                </div>
+                <div class="col-lg-6 ">
+                    <img src="assets/imgs/handy/18.jpg" style="width: 100%; height: 100%; object-fit: cover; ">
+                </div>
+
+            </div>
+            <h5 class="mt-5"> <span class="text-danger">UI</span> Design</h5>
+            <hr>
+            <div class="row" style="display: flex; justify-content: center;">
+                <img src="assets/imgs/handy/19.jpg"
+                    style="width: 80%; height: 80%; object-fit: cover; object-position:center; ">
+
+            </div>
+            <br>
+            <div class="row" style="display: flex; justify-content: center;">
+                <img src="assets/imgs/handy/20.jpg"
+                    style="width: 80%; height: 80%; object-fit: cover; object-position:center; ">
+            </div>
+            <br>
+            <div class="row" style="display: flex; justify-content: center;">
+                <img src="assets/imgs/handy/21.jpg"
+                    style="width: 80%; height: 80%; object-fit: cover; object-position:center; ">
+            </div>
+            <h5 class="mt-5">Tools</h5>
+            <hr>
+            <ul>
+                <li>Flutter</li>
+                <li>Firebase</li>
+                <li>Gits</li>
+                <li>Flutter Flow</li>
+                <li>Android Studio</li>
+            </ul>
+            <div class="row mt-5" style="display: flex; justify-content: center;">
+                <img src="assets/imgs/handy/22.jpg"
+                    style="width: 80%; height: 80%; object-fit: cover; object-position:center; ">
+
+            </div>
         </div>
+
+        <h5 class="mt-5"><span class="text-danger">Application </span>Showcase</h5>
+        <hr>
+        <script>
+            window.onscroll = function () {
+                    playVideoOnScroll("reg");
+                    playVideoOnScroll("create");
+                    playVideoOnScroll("help");
+                    playVideoOnScroll("accept");
+                    playVideoOnScroll("history");
+                    playVideoOnScroll("edit");
+                }
+
+                function playVideoOnScroll(id) {
+                    var video = document.getElementById(id);
+                    var rect = video.getBoundingClientRect();
+                    if (rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth)) {
+                        if (video.paused || video.ended) {
+                            video.play();
+                        }
+                    } else {
+                        video.pause();
+                    }
+                }
+
+            </script>
+   
+        <h5 class="mt-5">Register</h5>
+        <span class="line"></span>
+        <div class="row mt-4" style="display: flex; justify-content: center;">
+            <video id="reg" width="80%" height="100%" controls loop>
+                <source src="assets/imgs/handy/reg.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                <script>playVideoOnScroll("reg");</script>
+            </video>
+
+        </div>
+        <br>
+        <h5 class="mt-5">Create Event</h5>
+        <span class="line"></span>
+        <div class="row mt-4" style="display: flex; justify-content: center;">
+            <video id="create" width="80%" height="100%" controls loop>
+                <source src="assets/imgs/handy/create.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                <script>playVideoOnScroll("create");</script>
+            </video>
+
+        </div>
+        <br>
+        <h5 class="mt-5">Helpboard</h5>
+        <span class="line"></span>
+        <div class="row mt-4" style="display: flex; justify-content: center;">
+            <video id="help" width="80%" height="100%" controls loop>
+                <source src="assets/imgs/handy/helpboard.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+
+            </video>
+
+        </div>
+        <br>
+        <h5 class="mt-5">Accept History <span class="text-danger">& </span>Chat</h5>
+        <span class="line"></span>
+        <div class="row mt-5" style="display: flex; justify-content: center;">
+            <video id="accept" width="80%" height="100%" controls loop>
+                <source src="assets/imgs/handy/v-accept.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+
+            </video>
+
+        </div>
+        <br>
+        <h5 class="mt-5">Event History <span class="text-danger">& </span>Chat</h5>
+        <span class="line"></span>
+        <div class="row mt-5" style="display: flex; justify-content: center;">
+            <video id="history" width="80%" height="100%" controls loop>
+                <source src="assets/imgs/handy/event-history.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+
+            </video>
+
+        </div>
+        <br>
+        <h5 class="mt-5">Edit profile</h5>
+        <span class="line"></span>
+        <div class="row mt-5" style="display: flex; justify-content: center;">
+            <video id="edit" width="80%" height="100%" controls loop>
+                <source src="assets/imgs/handy/edit.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+
+            </video>
+
+        </div>
+
     </div>
+
+
+
+
+    <br><br><br>
+    <footer class="footer py-3 mt-5">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy;
+                <script>document.write(new Date().getFullYear())</script> Created With <i
+                    class="ti-heart text-danger"></i> By <a target="_blank"><span class="text-danger"
+                        title="Bootstrap 4 Themes and Dashboards"> New Thitipat</span></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- Google mpas -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+
 </body>
+
 </html>

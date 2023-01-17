@@ -24,23 +24,23 @@
             <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="index.html#home" class="nav-link">Home</a>
+                        <a href="index.html" class="nav-fixed">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#about" class="nav-link">About</a>
+                        <a href="index.html#about" class="nav-fixed">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#resume" class="nav-link">Resume</a>
+                        <a href="index.html#resume" class="nav-fixed">Resume</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+                        <a href="index.html#portfolio" class="nav-fixed">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#blog" class="nav-link">Blog</a>
+                        <a href="index.html#award" class="nav-fixed">Awards</a>
                     </li>
                     <li class="nav-item last-item">
-                        <a href="index.html#contact" class="nav-link">Contact</a>
+                        <a href="index.html#about" class="nav-fixed">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -50,6 +50,157 @@
     <div class="container">
         <h2 class="mt-5"><span>Hospital </span> <span class="text-danger">Management</span> Website</h2>
         <hr><br>
+   
+            <div class="row" style="display: flex; justify-content: center;">
+                <img src="assets/imgs/hospital/home.png"
+                    style="width: 80%; height: 80%; object-fit: cover; object-position:center; ">
+            </div>
     </div>
+    <div class="container">
+        <h5 class="mt-4">Introduction</h5>
+        <hr>
+        <p>This website is about hospital management by using HTML, CSS, PHP , JS and SQL. The purpose of this website is to manage all of the workflows in the hospital, i.e. patients(OPD, IPD), drugs, appointments, room and billing.</p>
+    </div>
+    <div class="container">
+        <h5 class="mt-4"><span class="text-danger">Learning</span> Objective</h5>
+        <hr>
+        <ul>
+            <li>Database concept</li>
+            <li>Relational database</li>
+            <li>SQL</li>
+            <li>Database system analysis</li>
+            <li>Database design and implementation</li>
+            <li>Web application and database</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h5 class="mt-5"> <span class="text-danger">ER</span> Model</h5>
+            <hr>
+            <div class="row" style="display: flex; justify-content: center;">
+                <img src="assets/imgs/hospital/er.png"
+                    style="width: 80%; height: 80%; object-fit: cover; object-position:center; ">
+
+            </div>
+    </div>
+    <div class="container">
+        <h5 class="mt-4"><span class="text-danger">User</span> Roles</h5>
+        <hr>
+        <ul>
+            <li>Doctor </li>
+            <li>Patient</li>
+            <li>Cashier</li>
+            <li>Pharmacist</li>
+            <li>Registrator</li>
+            <li>Admin</li>
+        </ul>
+    </div>
+    <script>
+        window.onscroll = function () {
+                playVideoOnScroll("reg");
+                playVideoOnScroll("opd");
+                playVideoOnScroll("doctor");
+                playVideoOnScroll("bill");
+                playVideoOnScroll("phar");
+                playVideoOnScroll("bed");
+            }
+
+            function playVideoOnScroll(id) {
+                var video = document.getElementById(id);
+                var rect = video.getBoundingClientRect();
+                if (rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth)) {
+                    if (video.paused || video.ended) {
+                        video.play();
+                    }
+                } else {
+                    video.pause();
+                }
+            }
+
+        </script>
+    <div class="container">
+        <h5 class="mt-5"> <span class="text-danger">Website</span> Workflow</h5>
+            <hr>
+            <h5 class="mt-5">Register new patient</h5>
+            <span class="line"></span>
+            <div class="row mt-4" style="display: flex; justify-content: center;">
+                <video id="reg" width="75%" height="100%" controls loop>
+                    <source src="assets/imgs/hospital/reg.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+    </div>
+    <br>
+    <h5 class="mt-5">New treatment</h5>
+            <span class="line"></span>
+            <div class="row mt-4" style="display: flex; justify-content: center;">
+                <video id="opd" width="75%" height="100%" controls loop>
+                    <source src="assets/imgs/hospital/opd.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+    </div>
+    <br>
+    <h5 class="mt-5">Treatment</h5>
+            <span class="line"></span>
+            <div class="row mt-4" style="display: flex; justify-content: center;">
+                <video id="doctor" width="75%" height="100%" controls loop>
+                    <source src="assets/imgs/hospital/doctor.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+    </div>
+    <br>
+    <h5 class="mt-5">Billing</h5>
+            <span class="line"></span>
+            <div class="row mt-4" style="display: flex; justify-content: center;">
+                <video id="bill" width="75%" height="100%" controls loop>
+                    <source src="assets/imgs/hospital/bill.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+    </div>
+    <br>
+    <h5 class="mt-5">Pharmacist</h5>
+            <span class="line"></span>
+            <div class="row mt-4" style="display: flex; justify-content: center;">
+                <video id="phar" width="75%" height="100%" controls loop>
+                    <source src="assets/imgs/hospital/phar.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+    </div>
+    <br>
+    <h5 class="mt-5">Add to IPD</h5>
+            <span class="line"></span>
+            <div class="row mt-4" style="display: flex; justify-content: center;">
+                <video id="bed" width="75%" height="100%" controls loop>
+                    <source src="assets/imgs/hospital/bed.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+    </div>
+    </div>
+    <br><br><br>
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy;
+                <script>document.write(new Date().getFullYear())</script> Created With <i
+                    class="ti-heart text-danger"></i> By <a target="_blank"><span
+                        class="text-danger" title="Bootstrap 4 Themes and Dashboards"> New Thitipat</span></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- Google mpas -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
 </body>
 </html>

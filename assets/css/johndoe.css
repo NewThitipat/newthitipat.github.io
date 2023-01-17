@@ -4465,6 +4465,13 @@ input[type="button"].btn-block {
   list-style: none;
 }
 
+.nav-fixed{
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #000000;
+  font-weight: 600;
+}
+
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
@@ -11506,8 +11513,8 @@ pre .code {
   position: relative;
   height: 80vh;
   min-height: 600px;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/cpe_group.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/cpe_group.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
